@@ -2,9 +2,9 @@
 
 # Dependency install 
 apk update
+apk add --no-cache python yaml-dev py-setuptools
 apk add --no-cache --virtual .build \
   git linux-headers gcc libc-dev python-dev py-pip
-apk add --no-cache python yaml-dev py-setuptools
 
 # Octoprint install
 git clone https://github.com/foosel/OctoPrint.git /home/user/octoprint
