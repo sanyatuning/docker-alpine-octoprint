@@ -7,7 +7,7 @@ Run the container with:
 ```
 docker run -p 5000:5000 \
   -v /host/path/to/config:/home/user/.octoprint \
-  -v --device=/dev/ttyS0:/dev/ttyS0 \
+  --device=/dev/ttyS0:/dev/ttyS0 \
   -it theorician/alpine-octoprint
 ```
 
